@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/diana1177/spring-cloud-config
+          default-label: dev
+          username: diana1177
+          password: ${GIT_HUB_TOKEN}
+server:
+  port: 8888
